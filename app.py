@@ -103,12 +103,12 @@ def doStream(resolution, bitrate, framerate, ipaddress1, ipaddress2, mode, rotat
                                         '--bitrate='+str(bitrate), width, height, device,
                                         '--udp=' + ipaddress1,
                                         '--udp2=' + ipaddress2,
-                                        '--rotation=' + rotation])
+                                        '--rotation=' + rotation, '--timestamp'])
     else:
         ISSTREAMING = subprocess.Popen(['python3', 'rtsp-server.py',
                                         '--fps='+str(framerate),
                                         '--bitrate='+str(bitrate), width, height, device,
-                                        '--rotation=' + rotation])
+                                        '--rotation=' + rotation, '--timestamp'])
     print("Started Streaming")
 
 @APP.route('/restart', methods=['POST'])
