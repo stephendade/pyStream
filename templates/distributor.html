@@ -16,15 +16,15 @@
             <label for="inPort">Incoming video port:</label>
             <input type="number" id="inPort" name="inPort" value="{{selinPort}}" min="5000" max="10000" {% if status %}disabled{% endif %}><br>
             <label for="ipaddress1">Endpoint IP address and port 1:</label>
-            <input type="text" id="ipaddress1" name="ipaddress1" value="{{selipaddress1}}" {% if status %}disabled{% endif %} minlength="9" maxlength="21" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
+            <input type="text" id="ipaddress1" name="ipaddress1" value="{{selipaddress1}}" {% if status %}disabled{% endif %} minlength="9" maxlength="25" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
             <label for="ipaddress2">Endpoint IP address and port 2:</label>
-            <input type="text" id="ipaddress2" name="ipaddress2" value="{{selipaddress2}}" {% if status %}disabled{% endif %} minlength="9" maxlength="21" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
+            <input type="text" id="ipaddress2" name="ipaddress2" value="{{selipaddress2}}" {% if status %}disabled{% endif %} minlength="9" maxlength="25" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
             <label for="ipaddress3">Endpoint IP address and port 3:</label>
-            <input type="text" id="ipaddress3" name="ipaddress3" value="{{selipaddress3}}" {% if status %}disabled{% endif %} minlength="9" maxlength="21" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
+            <input type="text" id="ipaddress3" name="ipaddress3" value="{{selipaddress3}}" {% if status %}disabled{% endif %} minlength="9" maxlength="25" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
             <label for="ipaddress4">Endpoint IP address and port 4:</label>
-            <input type="text" id="ipaddress4" name="ipaddress4" value="{{selipaddress4}}" {% if status %}disabled{% endif %} minlength="9" maxlength="21" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
+            <input type="text" id="ipaddress4" name="ipaddress4" value="{{selipaddress4}}" {% if status %}disabled{% endif %} minlength="9" maxlength="25" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
             <label for="ipaddress5">Endpoint IP address and port 5:</label>
-            <input type="text" id="ipaddress5" name="ipaddress5" value="{{selipaddress5}}" {% if status %}disabled{% endif %} minlength="9" maxlength="21" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
+            <input type="text" id="ipaddress5" name="ipaddress5" value="{{selipaddress5}}" {% if status %}disabled{% endif %} minlength="9" maxlength="25" size="15" pattern="^((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\:\d+$"><br>
             {% if status %}
               <input type="submit" value="Stop Streaming" method="post" enctype="multipart/form-data">
             {% else %}
