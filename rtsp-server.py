@@ -47,7 +47,7 @@ def getPipeline(device, height, width, bitrate, format, rotation, framerate, tim
     # include timestamp?
     ts = ""
     if timestamp:
-        ts = "! clockoverlay time-format=\"%D %H:%M:%S\" "
+        ts = "! clockoverlay time-format=\"%D %H:%M:%S\" ! textoverlay text=\"{0}fps\" valignment=top halignment=right ".format(framerate)
         
     if device == "testsrc":
             s_src = "videotestsrc ! video/x-raw,width={0},height={1}{2}".format(width, height, framestr)
